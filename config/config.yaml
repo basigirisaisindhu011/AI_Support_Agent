@@ -1,0 +1,63 @@
+# Hiver AI Support Agent Configuration
+
+system:
+  project_name: "Hiver AI Support Agent"
+  brand: "AmazonHelp"
+  seed: 42
+  fast_sample_rows: 100000
+
+paths:
+  raw_csv: "data/raw/twcs.csv"
+  processed_dir: "data/processed"
+  processed_pairs: "data/processed/twcs_amazonhelp.csv"
+  golden_set: "data/golden/golden_set.json"
+  sample_csv: "data/samples/sample_twcs.csv"
+  vector_index: "data/processed/retrieval_index.pkl"
+  reports_dir: "reports"
+  results_json: "reports/results.json"
+  predictions_csv: "reports/predictions.csv"
+  failure_csv: "reports/failure_examples.csv"
+
+intents:
+  taxonomy:
+    - DELIVERY_STATUS
+    - REFUND_RETURN
+    - CANCELLATION
+    - PAYMENT_CHARGE
+    - ACCOUNT_ACCESS
+    - DAMAGED_WRONG_MISSING_ITEM
+    - PRIME_SUBSCRIPTION
+    - GENERAL_OTHER
+
+models:
+  embedding_model: "all-MiniLM-L6-v2"
+  classifier_max_iter: 1000
+  tfidf_max_features: 5000
+
+retrieval:
+  top_k: 3
+  similarity_threshold: 0.45
+
+routing:
+  min_confidence_threshold: 0.65
+  min_retrieval_sim_threshold: 0.45
+  sensitive_intents:
+    - ACCOUNT_ACCESS
+    - PAYMENT_CHARGE
+  security_legal_keywords:
+    - "lawyer"
+    - "legal"
+    - "sue"
+    - "court"
+    - "hacked"
+    - "fraud"
+    - "unauthorized"
+    - "stolen card"
+
+generation:
+  max_retrieved_context_len: 1200
+  temperature: 0.2
+
+evaluation:
+  golden_set_size: 200
+  human_eval_sample_size: 35

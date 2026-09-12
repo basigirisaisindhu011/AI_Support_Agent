@@ -1,0 +1,11 @@
+tweet_id,author_id,in_reply_to_tweet_id,created_at,text,response_tweet_id
+1,user101,,Wed Oct 11 10:00:00 +0000 2017,@AmazonHelp where is my package tracking delayed for 3 days,2
+2,AmazonHelp,1,Wed Oct 11 10:05:00 +0000 2017,@user101 We understand your frustration! Please DM us your order ID to check.,
+3,user102,,Wed Oct 11 10:10:00 +0000 2017,@AmazonHelp return portal is giving error code 500 when printing label,4
+4,AmazonHelp,3,Wed Oct 11 10:15:00 +0000 2017,@user102 Sorry about that! Send us a DM with your order details and we will email a QR code.,
+5,user103,,Wed Oct 11 10:20:00 +0000 2017,@AmazonHelp I see two separate charges of $49.99 on my Visa credit card,6
+6,AmazonHelp,5,Wed Oct 11 10:25:00 +0000 2017,@user103 Please send us a DM right away so our billing team can audit the charges.,
+7,user104,,Wed Oct 11 10:30:00 +0000 2017,@AmazonHelp somebody hacked my account and changed email address,8
+8,AmazonHelp,7,Wed Oct 11 10:35:00 +0000 2017,@user104 Please DM us immediately so our Security team can lock the unauthorized order.,
+9,user105,,Wed Oct 11 10:40:00 +0000 2017,@AmazonHelp sauce bottle arrived broken and shattered in the box,10
+10,AmazonHelp,9,Wed Oct 11 10:45:00 +0000 2017,@user105 We are so sorry! Please DM us photos of the broken jar and your order number.,

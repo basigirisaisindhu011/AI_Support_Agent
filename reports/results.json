@@ -1,0 +1,87 @@
+{
+  "dataset_info": {
+    "brand": "AmazonHelp",
+    "golden_set_size": 200,
+    "data_source": "Real Kaggle Customer Support on Twitter (AmazonHelp)"
+  },
+  "intent_classification": {
+    "baseline_0_majority": {
+      "accuracy": 0.155,
+      "macro_precision": 0.0194,
+      "macro_recall": 0.125,
+      "macro_f1": 0.0335,
+      "weighted_f1": 0.0416
+    },
+    "baseline_1_tfidf": {
+      "accuracy": 0.735,
+      "macro_precision": 0.7737,
+      "macro_recall": 0.6577,
+      "macro_f1": 0.6477,
+      "weighted_f1": 0.7171
+    },
+    "main_model_sentence_transformer": {
+      "accuracy": 0.85,
+      "macro_precision": 0.848,
+      "macro_recall": 0.7603,
+      "macro_f1": 0.7844,
+      "weighted_f1": 0.8744
+    }
+  },
+  "escalation_routing_trust": {
+    "unsafe_auto_handle_rate": 0.0,
+    "automation_rate": 0.6,
+    "escalation_precision": 0.65,
+    "escalation_recall": 1.0,
+    "escalation_f1": 0.7879,
+    "total_evaluated": 200,
+    "gold_escalations_total": 52,
+    "unsafe_auto_handles_count": 0
+  },
+  "reply_generation_systems": {
+    "trivial_baseline": {
+      "overall_quality_score": 4.9322,
+      "relevance": 5.0,
+      "groundedness": 4.98,
+      "helpfulness": 5.0,
+      "tone": 5.0,
+      "safety": 4.61,
+      "hallucination_risk": 1.0,
+      "secondary_bleu_4": 0.6256,
+      "secondary_rouge_l": 0.5738
+    },
+    "simple_1nn_baseline": {
+      "overall_quality_score": 4.8296,
+      "relevance": 4.765,
+      "groundedness": 4.98,
+      "helpfulness": 4.72,
+      "tone": 4.86,
+      "safety": 4.65,
+      "hallucination_risk": 1.0,
+      "secondary_bleu_4": 0.4105,
+      "secondary_rouge_l": 0.2683
+    },
+    "main_grounded_system": {
+      "overall_quality_score": 4.8914,
+      "relevance": 4.75,
+      "groundedness": 4.98,
+      "helpfulness": 4.75,
+      "tone": 5.0,
+      "safety": 4.87,
+      "hallucination_risk": 1.0,
+      "secondary_bleu_4": 0.4815,
+      "secondary_rouge_l": 0.3879
+    }
+  },
+  "human_vs_judge_agreement": {
+    "spearman_correlation": 0.0006,
+    "weighted_cohens_kappa": -0.0135,
+    "exact_agreement": 0.2286,
+    "agreement_within_1_point": 0.9714,
+    "pearson_correlation": 0.0717,
+    "sample_size": 35
+  },
+  "failure_analysis_summary": {
+    "total_failures_identified": 30,
+    "failure_csv_path": "C:\\Users\\well\\Documents\\Hiver_AI_Support_Agent\\reports\\failure_examples.csv"
+  }
+}

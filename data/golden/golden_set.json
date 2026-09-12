@@ -1,0 +1,1802 @@
+[
+  {
+    "pair_id": "pair_101",
+    "customer_tweet_id": "tw_101",
+    "customer_clean_text": "My package was supposed to arrive yesterday by 8 PM but tracking still says in transit. Where is it?",
+    "support_response": "We understand your concern regarding the delivery delay! Please send us a Direct Message (DM) with your order ID so we can investigate.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_102",
+    "customer_tweet_id": "tw_102",
+    "customer_clean_text": "Hey Amazon, tracking shows delivered to receptionist but I live in an apartment with no front desk. Where is my item?",
+    "support_response": "Sorry to hear you haven't received your package! Please DM us your order number and full delivery address so we can locate it.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_103",
+    "customer_tweet_id": "tw_103",
+    "customer_clean_text": "Delivery driver marked my shipment as attempted delivery but no one rang my doorbell all morning.",
+    "support_response": "We apologize for the inconvenience! Please DM us your order ID so we can coordinate with the local carrier for re-delivery.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_104",
+    "customer_tweet_id": "tw_104",
+    "customer_clean_text": "Can I change the delivery address for order 402-9182312 since I won't be home tomorrow?",
+    "support_response": "Address changes depend on shipment status. Please DM us your order details and updated address right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_105",
+    "customer_tweet_id": "tw_105",
+    "customer_clean_text": "Why is my package stuck at the local sorting facility for 3 days straight without updates?",
+    "support_response": "That certainly shouldn't happen! Please DM us your order number so we can reach out to the carrier for an update.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_201",
+    "customer_tweet_id": "tw_201",
+    "customer_clean_text": "I dropped off my return package at UPS 5 days ago. When will the refund hit my bank account?",
+    "support_response": "Refunds usually process within 3-5 business days after carrier scan. Please DM us your tracking number and order details to verify.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_202",
+    "customer_tweet_id": "tw_202",
+    "customer_clean_text": "The return portal won't let me print a QR code for my shoe return. Need a QR code instead of printed label.",
+    "support_response": "We can help generate a QR code! Please send us a DM with your order ID and return request details.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_203",
+    "customer_tweet_id": "tw_203",
+    "customer_clean_text": "You issued a gift card balance refund instead of back to my original credit card. Please fix this!",
+    "support_response": "We apologize for the refund method mixup. Please send us a DM with your order number so we can adjust the refund destination.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_301",
+    "customer_tweet_id": "tw_301",
+    "customer_clean_text": "I accidentally ordered two monitors instead of one. I clicked cancel order 5 minutes ago, will it be canceled?",
+    "support_response": "If the order hasn't entered dispatch, cancellation will succeed! DM us your order number so we can check immediate status.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_302",
+    "customer_tweet_id": "tw_302",
+    "customer_clean_text": "Please cancel my subscribe and save order for coffee pods before it charges me next month.",
+    "support_response": "You can manage subscriptions under your account or DM us your email so we can assist you with cancellation.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_401",
+    "customer_tweet_id": "tw_401",
+    "customer_clean_text": "I see two separate charges of $49.99 on my Visa statement for the exact same order. Need immediate refund for double charge!",
+    "support_response": "We take billing errors very seriously! Please send us a DM with your order number and email address so we can audit charges.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_402",
+    "customer_tweet_id": "tw_402",
+    "customer_clean_text": "My gift card code keeps saying already redeemed when I haven't used it. Was it stolen?",
+    "support_response": "For security reasons regarding gift cards, please send us a DM with your gift card details and order claim code.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_501",
+    "customer_tweet_id": "tw_501",
+    "customer_clean_text": "I am locked out of my Amazon account and the OTP is being sent to an old phone number I no longer have access to.",
+    "support_response": "We can help you update your verification phone number! Please DM us your registered account email address for identity check.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_502",
+    "customer_tweet_id": "tw_502",
+    "customer_clean_text": "Someone logged into my account from abroad and ordered an expensive laptop. I suspect fraudulent unauthorized activity!",
+    "support_response": "Please reach out via DM immediately so our Account Security team can lock the unauthorized order and secure your account.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_601",
+    "customer_tweet_id": "tw_601",
+    "customer_clean_text": "The glass jar of sauce inside my package arrived completely shattered and leaked all over the other items.",
+    "support_response": "We are so sorry for the damaged items! Please send us a DM with photos of the package and your order number for a replacement.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_602",
+    "customer_tweet_id": "tw_602",
+    "customer_clean_text": "Ordered size 10 running shoes but received size 7 in the box. Wrong item sent.",
+    "support_response": "Apologies for sending the wrong size! Please DM us your order ID so we can send the correct item right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_701",
+    "customer_tweet_id": "tw_701",
+    "customer_clean_text": "I was auto-renewed for Amazon Prime annual membership yesterday. Can I cancel and get a full refund?",
+    "support_response": "If Prime benefits haven't been used since renewal, you are eligible for a full refund! DM us your account email to proceed.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_801",
+    "customer_tweet_id": "tw_801",
+    "customer_clean_text": "Shoutout to Amazon Help delivery team for getting my daughter's birthday gift delivered in terrible snow weather!",
+    "support_response": "Thank you so much for the kind words! We will pass this feedback to our local delivery team. Have a wonderful day!",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_019",
+    "customer_tweet_id": "tw_gold_019",
+    "customer_clean_text": "Tracking for order #4019-900057 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_020",
+    "customer_tweet_id": "tw_gold_020",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4020-900060. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_021",
+    "customer_tweet_id": "tw_gold_021",
+    "customer_clean_text": "Returned item #4021-900063 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_022",
+    "customer_tweet_id": "tw_gold_022",
+    "customer_clean_text": "How long does a refund take for order #4022-900066 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_023",
+    "customer_tweet_id": "tw_gold_023",
+    "customer_clean_text": "Can I cancel order #4023-900069? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_024",
+    "customer_tweet_id": "tw_gold_024",
+    "customer_clean_text": "Unrecognized charge of $27.99 on my card under Amazon Market. Order #4024-900072.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_025",
+    "customer_tweet_id": "tw_gold_025",
+    "customer_clean_text": "Payment failed for order #4025-900075 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_026",
+    "customer_tweet_id": "tw_gold_026",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_027",
+    "customer_tweet_id": "tw_gold_027",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_028",
+    "customer_tweet_id": "tw_gold_028",
+    "customer_clean_text": "Box for order #4028-900084 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_029",
+    "customer_tweet_id": "tw_gold_029",
+    "customer_clean_text": "Order #4029-900087 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_030",
+    "customer_tweet_id": "tw_gold_030",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #4030-900090 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_031",
+    "customer_tweet_id": "tw_gold_031",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #4031-900093?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_032",
+    "customer_tweet_id": "tw_gold_032",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #4032-900096?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_033",
+    "customer_tweet_id": "tw_gold_033",
+    "customer_clean_text": "Great customer support service on my recent inquiry #4033-900099. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_034",
+    "customer_tweet_id": "tw_gold_034",
+    "customer_clean_text": "Tracking for order #4034-900102 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_035",
+    "customer_tweet_id": "tw_gold_035",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4035-900105. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_036",
+    "customer_tweet_id": "tw_gold_036",
+    "customer_clean_text": "Returned item #4036-900108 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_037",
+    "customer_tweet_id": "tw_gold_037",
+    "customer_clean_text": "How long does a refund take for order #4037-900111 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_038",
+    "customer_tweet_id": "tw_gold_038",
+    "customer_clean_text": "Can I cancel order #4038-900114? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_039",
+    "customer_tweet_id": "tw_gold_039",
+    "customer_clean_text": "Unrecognized charge of $52.99 on my card under Amazon Market. Order #4039-900117.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_040",
+    "customer_tweet_id": "tw_gold_040",
+    "customer_clean_text": "Payment failed for order #4040-900120 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_041",
+    "customer_tweet_id": "tw_gold_041",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_042",
+    "customer_tweet_id": "tw_gold_042",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_043",
+    "customer_tweet_id": "tw_gold_043",
+    "customer_clean_text": "Box for order #4043-900129 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_044",
+    "customer_tweet_id": "tw_gold_044",
+    "customer_clean_text": "Order #4044-900132 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_045",
+    "customer_tweet_id": "tw_gold_045",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #4045-900135 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_046",
+    "customer_tweet_id": "tw_gold_046",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #4046-900138?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_047",
+    "customer_tweet_id": "tw_gold_047",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #4047-900141?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_048",
+    "customer_tweet_id": "tw_gold_048",
+    "customer_clean_text": "Great customer support service on my recent inquiry #4048-900144. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_049",
+    "customer_tweet_id": "tw_gold_049",
+    "customer_clean_text": "Tracking for order #4049-900147 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_050",
+    "customer_tweet_id": "tw_gold_050",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4050-900150. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_051",
+    "customer_tweet_id": "tw_gold_051",
+    "customer_clean_text": "Returned item #4051-900153 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_052",
+    "customer_tweet_id": "tw_gold_052",
+    "customer_clean_text": "How long does a refund take for order #4052-900156 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_053",
+    "customer_tweet_id": "tw_gold_053",
+    "customer_clean_text": "Can I cancel order #4053-900159? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_054",
+    "customer_tweet_id": "tw_gold_054",
+    "customer_clean_text": "Unrecognized charge of $77.99 on my card under Amazon Market. Order #4054-900162.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_055",
+    "customer_tweet_id": "tw_gold_055",
+    "customer_clean_text": "Payment failed for order #4055-900165 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_056",
+    "customer_tweet_id": "tw_gold_056",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_057",
+    "customer_tweet_id": "tw_gold_057",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_058",
+    "customer_tweet_id": "tw_gold_058",
+    "customer_clean_text": "Box for order #4058-900174 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_059",
+    "customer_tweet_id": "tw_gold_059",
+    "customer_clean_text": "Order #4059-900177 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_060",
+    "customer_tweet_id": "tw_gold_060",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #4060-900180 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_061",
+    "customer_tweet_id": "tw_gold_061",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #4061-900183?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_062",
+    "customer_tweet_id": "tw_gold_062",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #4062-900186?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_063",
+    "customer_tweet_id": "tw_gold_063",
+    "customer_clean_text": "Great customer support service on my recent inquiry #4063-900189. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_064",
+    "customer_tweet_id": "tw_gold_064",
+    "customer_clean_text": "Tracking for order #4064-900192 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_065",
+    "customer_tweet_id": "tw_gold_065",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4065-900195. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_066",
+    "customer_tweet_id": "tw_gold_066",
+    "customer_clean_text": "Returned item #4066-900198 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_067",
+    "customer_tweet_id": "tw_gold_067",
+    "customer_clean_text": "How long does a refund take for order #4067-900201 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_068",
+    "customer_tweet_id": "tw_gold_068",
+    "customer_clean_text": "Can I cancel order #4068-900204? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_069",
+    "customer_tweet_id": "tw_gold_069",
+    "customer_clean_text": "Unrecognized charge of $22.99 on my card under Amazon Market. Order #4069-900207.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_070",
+    "customer_tweet_id": "tw_gold_070",
+    "customer_clean_text": "Payment failed for order #4070-900210 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_071",
+    "customer_tweet_id": "tw_gold_071",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_072",
+    "customer_tweet_id": "tw_gold_072",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_073",
+    "customer_tweet_id": "tw_gold_073",
+    "customer_clean_text": "Box for order #4073-900219 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_074",
+    "customer_tweet_id": "tw_gold_074",
+    "customer_clean_text": "Order #4074-900222 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_075",
+    "customer_tweet_id": "tw_gold_075",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #4075-900225 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_076",
+    "customer_tweet_id": "tw_gold_076",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #4076-900228?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_077",
+    "customer_tweet_id": "tw_gold_077",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #4077-900231?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_078",
+    "customer_tweet_id": "tw_gold_078",
+    "customer_clean_text": "Great customer support service on my recent inquiry #4078-900234. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_079",
+    "customer_tweet_id": "tw_gold_079",
+    "customer_clean_text": "Tracking for order #4079-900237 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_080",
+    "customer_tweet_id": "tw_gold_080",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4080-900240. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_081",
+    "customer_tweet_id": "tw_gold_081",
+    "customer_clean_text": "Returned item #4081-900243 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_082",
+    "customer_tweet_id": "tw_gold_082",
+    "customer_clean_text": "How long does a refund take for order #4082-900246 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_083",
+    "customer_tweet_id": "tw_gold_083",
+    "customer_clean_text": "Can I cancel order #4083-900249? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_084",
+    "customer_tweet_id": "tw_gold_084",
+    "customer_clean_text": "Unrecognized charge of $47.99 on my card under Amazon Market. Order #4084-900252.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_085",
+    "customer_tweet_id": "tw_gold_085",
+    "customer_clean_text": "Payment failed for order #4085-900255 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_086",
+    "customer_tweet_id": "tw_gold_086",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_087",
+    "customer_tweet_id": "tw_gold_087",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_088",
+    "customer_tweet_id": "tw_gold_088",
+    "customer_clean_text": "Box for order #4088-900264 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_089",
+    "customer_tweet_id": "tw_gold_089",
+    "customer_clean_text": "Order #4089-900267 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_090",
+    "customer_tweet_id": "tw_gold_090",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #4090-900270 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_091",
+    "customer_tweet_id": "tw_gold_091",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #4091-900273?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_092",
+    "customer_tweet_id": "tw_gold_092",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #4092-900276?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_093",
+    "customer_tweet_id": "tw_gold_093",
+    "customer_clean_text": "Great customer support service on my recent inquiry #4093-900279. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_094",
+    "customer_tweet_id": "tw_gold_094",
+    "customer_clean_text": "Tracking for order #4094-900282 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_095",
+    "customer_tweet_id": "tw_gold_095",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #4095-900285. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_096",
+    "customer_tweet_id": "tw_gold_096",
+    "customer_clean_text": "Returned item #4096-900288 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_097",
+    "customer_tweet_id": "tw_gold_097",
+    "customer_clean_text": "How long does a refund take for order #4097-900291 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_098",
+    "customer_tweet_id": "tw_gold_098",
+    "customer_clean_text": "Can I cancel order #4098-900294? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_099",
+    "customer_tweet_id": "tw_gold_099",
+    "customer_clean_text": "Unrecognized charge of $72.99 on my card under Amazon Market. Order #4099-900297.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_100",
+    "customer_tweet_id": "tw_gold_100",
+    "customer_clean_text": "Payment failed for order #40100-900300 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_101",
+    "customer_tweet_id": "tw_gold_101",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_102",
+    "customer_tweet_id": "tw_gold_102",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_103",
+    "customer_tweet_id": "tw_gold_103",
+    "customer_clean_text": "Box for order #40103-900309 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_104",
+    "customer_tweet_id": "tw_gold_104",
+    "customer_clean_text": "Order #40104-900312 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_105",
+    "customer_tweet_id": "tw_gold_105",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40105-900315 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_106",
+    "customer_tweet_id": "tw_gold_106",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40106-900318?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_107",
+    "customer_tweet_id": "tw_gold_107",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40107-900321?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_108",
+    "customer_tweet_id": "tw_gold_108",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40108-900324. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_109",
+    "customer_tweet_id": "tw_gold_109",
+    "customer_clean_text": "Tracking for order #40109-900327 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_110",
+    "customer_tweet_id": "tw_gold_110",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40110-900330. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_111",
+    "customer_tweet_id": "tw_gold_111",
+    "customer_clean_text": "Returned item #40111-900333 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_112",
+    "customer_tweet_id": "tw_gold_112",
+    "customer_clean_text": "How long does a refund take for order #40112-900336 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_113",
+    "customer_tweet_id": "tw_gold_113",
+    "customer_clean_text": "Can I cancel order #40113-900339? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_114",
+    "customer_tweet_id": "tw_gold_114",
+    "customer_clean_text": "Unrecognized charge of $97.99 on my card under Amazon Market. Order #40114-900342.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_115",
+    "customer_tweet_id": "tw_gold_115",
+    "customer_clean_text": "Payment failed for order #40115-900345 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_116",
+    "customer_tweet_id": "tw_gold_116",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_117",
+    "customer_tweet_id": "tw_gold_117",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_118",
+    "customer_tweet_id": "tw_gold_118",
+    "customer_clean_text": "Box for order #40118-900354 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_119",
+    "customer_tweet_id": "tw_gold_119",
+    "customer_clean_text": "Order #40119-900357 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_120",
+    "customer_tweet_id": "tw_gold_120",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40120-900360 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_121",
+    "customer_tweet_id": "tw_gold_121",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40121-900363?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_122",
+    "customer_tweet_id": "tw_gold_122",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40122-900366?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_123",
+    "customer_tweet_id": "tw_gold_123",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40123-900369. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_124",
+    "customer_tweet_id": "tw_gold_124",
+    "customer_clean_text": "Tracking for order #40124-900372 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_125",
+    "customer_tweet_id": "tw_gold_125",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40125-900375. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_126",
+    "customer_tweet_id": "tw_gold_126",
+    "customer_clean_text": "Returned item #40126-900378 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_127",
+    "customer_tweet_id": "tw_gold_127",
+    "customer_clean_text": "How long does a refund take for order #40127-900381 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_128",
+    "customer_tweet_id": "tw_gold_128",
+    "customer_clean_text": "Can I cancel order #40128-900384? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_129",
+    "customer_tweet_id": "tw_gold_129",
+    "customer_clean_text": "Unrecognized charge of $42.99 on my card under Amazon Market. Order #40129-900387.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_130",
+    "customer_tweet_id": "tw_gold_130",
+    "customer_clean_text": "Payment failed for order #40130-900390 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_131",
+    "customer_tweet_id": "tw_gold_131",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_132",
+    "customer_tweet_id": "tw_gold_132",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_133",
+    "customer_tweet_id": "tw_gold_133",
+    "customer_clean_text": "Box for order #40133-900399 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_134",
+    "customer_tweet_id": "tw_gold_134",
+    "customer_clean_text": "Order #40134-900402 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_135",
+    "customer_tweet_id": "tw_gold_135",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40135-900405 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_136",
+    "customer_tweet_id": "tw_gold_136",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40136-900408?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_137",
+    "customer_tweet_id": "tw_gold_137",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40137-900411?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_138",
+    "customer_tweet_id": "tw_gold_138",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40138-900414. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_139",
+    "customer_tweet_id": "tw_gold_139",
+    "customer_clean_text": "Tracking for order #40139-900417 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_140",
+    "customer_tweet_id": "tw_gold_140",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40140-900420. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_141",
+    "customer_tweet_id": "tw_gold_141",
+    "customer_clean_text": "Returned item #40141-900423 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_142",
+    "customer_tweet_id": "tw_gold_142",
+    "customer_clean_text": "How long does a refund take for order #40142-900426 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_143",
+    "customer_tweet_id": "tw_gold_143",
+    "customer_clean_text": "Can I cancel order #40143-900429? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_144",
+    "customer_tweet_id": "tw_gold_144",
+    "customer_clean_text": "Unrecognized charge of $67.99 on my card under Amazon Market. Order #40144-900432.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_145",
+    "customer_tweet_id": "tw_gold_145",
+    "customer_clean_text": "Payment failed for order #40145-900435 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_146",
+    "customer_tweet_id": "tw_gold_146",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_147",
+    "customer_tweet_id": "tw_gold_147",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_148",
+    "customer_tweet_id": "tw_gold_148",
+    "customer_clean_text": "Box for order #40148-900444 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_149",
+    "customer_tweet_id": "tw_gold_149",
+    "customer_clean_text": "Order #40149-900447 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_150",
+    "customer_tweet_id": "tw_gold_150",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40150-900450 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_151",
+    "customer_tweet_id": "tw_gold_151",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40151-900453?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_152",
+    "customer_tweet_id": "tw_gold_152",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40152-900456?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_153",
+    "customer_tweet_id": "tw_gold_153",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40153-900459. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_154",
+    "customer_tweet_id": "tw_gold_154",
+    "customer_clean_text": "Tracking for order #40154-900462 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_155",
+    "customer_tweet_id": "tw_gold_155",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40155-900465. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_156",
+    "customer_tweet_id": "tw_gold_156",
+    "customer_clean_text": "Returned item #40156-900468 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_157",
+    "customer_tweet_id": "tw_gold_157",
+    "customer_clean_text": "How long does a refund take for order #40157-900471 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_158",
+    "customer_tweet_id": "tw_gold_158",
+    "customer_clean_text": "Can I cancel order #40158-900474? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_159",
+    "customer_tweet_id": "tw_gold_159",
+    "customer_clean_text": "Unrecognized charge of $92.99 on my card under Amazon Market. Order #40159-900477.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_160",
+    "customer_tweet_id": "tw_gold_160",
+    "customer_clean_text": "Payment failed for order #40160-900480 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_161",
+    "customer_tweet_id": "tw_gold_161",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_162",
+    "customer_tweet_id": "tw_gold_162",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_163",
+    "customer_tweet_id": "tw_gold_163",
+    "customer_clean_text": "Box for order #40163-900489 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_164",
+    "customer_tweet_id": "tw_gold_164",
+    "customer_clean_text": "Order #40164-900492 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_165",
+    "customer_tweet_id": "tw_gold_165",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40165-900495 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_166",
+    "customer_tweet_id": "tw_gold_166",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40166-900498?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_167",
+    "customer_tweet_id": "tw_gold_167",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40167-900501?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_168",
+    "customer_tweet_id": "tw_gold_168",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40168-900504. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_169",
+    "customer_tweet_id": "tw_gold_169",
+    "customer_clean_text": "Tracking for order #40169-900507 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_170",
+    "customer_tweet_id": "tw_gold_170",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40170-900510. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_171",
+    "customer_tweet_id": "tw_gold_171",
+    "customer_clean_text": "Returned item #40171-900513 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_172",
+    "customer_tweet_id": "tw_gold_172",
+    "customer_clean_text": "How long does a refund take for order #40172-900516 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_173",
+    "customer_tweet_id": "tw_gold_173",
+    "customer_clean_text": "Can I cancel order #40173-900519? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_174",
+    "customer_tweet_id": "tw_gold_174",
+    "customer_clean_text": "Unrecognized charge of $37.99 on my card under Amazon Market. Order #40174-900522.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_175",
+    "customer_tweet_id": "tw_gold_175",
+    "customer_clean_text": "Payment failed for order #40175-900525 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_176",
+    "customer_tweet_id": "tw_gold_176",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_177",
+    "customer_tweet_id": "tw_gold_177",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_178",
+    "customer_tweet_id": "tw_gold_178",
+    "customer_clean_text": "Box for order #40178-900534 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_179",
+    "customer_tweet_id": "tw_gold_179",
+    "customer_clean_text": "Order #40179-900537 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_180",
+    "customer_tweet_id": "tw_gold_180",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40180-900540 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_181",
+    "customer_tweet_id": "tw_gold_181",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40181-900543?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_182",
+    "customer_tweet_id": "tw_gold_182",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40182-900546?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_183",
+    "customer_tweet_id": "tw_gold_183",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40183-900549. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_184",
+    "customer_tweet_id": "tw_gold_184",
+    "customer_clean_text": "Tracking for order #40184-900552 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_185",
+    "customer_tweet_id": "tw_gold_185",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40185-900555. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_186",
+    "customer_tweet_id": "tw_gold_186",
+    "customer_clean_text": "Returned item #40186-900558 via UPS locker 3 days ago, still waiting for credit card refund.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_187",
+    "customer_tweet_id": "tw_gold_187",
+    "customer_clean_text": "How long does a refund take for order #40187-900561 after dropoff at Kohl's?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "REFUND_RETURN",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_188",
+    "customer_tweet_id": "tw_gold_188",
+    "customer_clean_text": "Can I cancel order #40188-900564? It was placed by mistake 10 minutes ago.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "CANCELLATION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_189",
+    "customer_tweet_id": "tw_gold_189",
+    "customer_clean_text": "Unrecognized charge of $62.99 on my card under Amazon Market. Order #40189-900567.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_190",
+    "customer_tweet_id": "tw_gold_190",
+    "customer_clean_text": "Payment failed for order #40190-900570 but my bank account shows funds deducted.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PAYMENT_CHARGE",
+    "gold_should_escalate": true,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_191",
+    "customer_tweet_id": "tw_gold_191",
+    "customer_clean_text": "Cannot receive 2FA verification SMS for my account login. Need help resetting.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_192",
+    "customer_tweet_id": "tw_gold_192",
+    "customer_clean_text": "My account email was changed without my authorization. Please lock account!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "ACCOUNT_ACCESS",
+    "gold_should_escalate": true,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_193",
+    "customer_tweet_id": "tw_gold_193",
+    "customer_clean_text": "Box for order #40193-900579 arrived crushed and internal monitor screen is cracked.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_194",
+    "customer_tweet_id": "tw_gold_194",
+    "customer_clean_text": "Order #40194-900582 missing 1 out of 3 items listed on packing slip.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DAMAGED_WRONG_MISSING_ITEM",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.5
+  },
+  {
+    "pair_id": "pair_gold_195",
+    "customer_tweet_id": "tw_gold_195",
+    "customer_clean_text": "Charged $14.99 for Prime subscription #40195-900585 without my consent. Cancel please.",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  },
+  {
+    "pair_id": "pair_gold_196",
+    "customer_tweet_id": "tw_gold_196",
+    "customer_clean_text": "Why am I not getting free 1-day delivery on Prime eligible item order #40196-900588?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "PRIME_SUBSCRIPTION",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.5
+  },
+  {
+    "pair_id": "pair_gold_197",
+    "customer_tweet_id": "tw_gold_197",
+    "customer_clean_text": "What are customer service contact hours for Amazon Pharmacy order #40197-900591?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 3.0
+  },
+  {
+    "pair_id": "pair_gold_198",
+    "customer_tweet_id": "tw_gold_198",
+    "customer_clean_text": "Great customer support service on my recent inquiry #40198-900594. Thank you Amazon!",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "GENERAL_OTHER",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_199",
+    "customer_tweet_id": "tw_gold_199",
+    "customer_clean_text": "Tracking for order #40199-900597 has not updated for 6 days. Is it lost in transit?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 5.0
+  },
+  {
+    "pair_id": "pair_gold_200",
+    "customer_tweet_id": "tw_gold_200",
+    "customer_clean_text": "Estimated delivery was 2 PM today for #40200-900600. Courier shows delayed, when will it arrive?",
+    "support_response": "We apologize for the issue! Please send us a Direct Message (DM) with your order details so our team can assist you right away.",
+    "gold_intent": "DELIVERY_STATUS",
+    "gold_should_escalate": false,
+    "human_quality_rating": 4.0
+  }
+]
