@@ -45,7 +45,9 @@ data/processed/*.json
 
 # Streamlit
 .streamlit/
+.streamlit/secrets.toml
 
 # Scratch
 scratch/
+
 

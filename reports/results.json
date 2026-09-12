@@ -82,6 +82,6 @@
   },
   "failure_analysis_summary": {
     "total_failures_identified": 30,
-    "failure_csv_path": "C:\\Users\\well\\Documents\\Hiver_AI_Support_Agent\\reports\\failure_examples.csv"
+    "failure_csv_path": "reports/failure_examples.csv"
   }
 }
